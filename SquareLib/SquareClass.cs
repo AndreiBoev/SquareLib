@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace SquareLib
 {
@@ -57,7 +53,7 @@ namespace SquareLib
         /// <param name="sides">An array of shape parameters.</param>
         /// <returns>The square of the shape.</returns>
         /// <exception cref="ArgumentException">If there are more than 3 sides or some side is greater than zero.</exception>
-        public double СalculateSquare(double[] sides)
+        public double СalculateShape(double[] sides)
         {
             foreach(double side in sides)
             {
