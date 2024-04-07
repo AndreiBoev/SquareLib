@@ -33,7 +33,7 @@ namespace SquareLib
         {
             if (a <= 0 || b <= 0 || c <= 0)
                 throw new ArgumentException("All sides must be greater than zero.");
-            if ((a + b > c) && (a + c > b) && (b + c > a))
+            if (!((a + b > c) && (a + c > b) && (b + c > a)))
                 throw new ArgumentException("There is no triangle with such sides.");
             double res;
             double[] sides = new double[] { a, b, c };
@@ -72,7 +72,7 @@ namespace SquareLib
                 double a = sides[0];
                 double b = sides[1];
                 double c = sides[2];
-                if ((a + b > c) && (a + c > b) && (b + c > a))
+                if (!((a + b > c) && (a + c > b) && (b + c > a)))
                     throw new ArgumentException("There is no triangle with such sides.");
                 double s = (a + b + c) / 2;
                 return Math.Sqrt(s * (s - a) * (s - b) * (s - c));
