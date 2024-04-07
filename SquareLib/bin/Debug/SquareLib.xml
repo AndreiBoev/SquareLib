@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>SquareLib</name>
+    </assembly>
+    <members>
+        <member name="T:SquareLib.SquareClass">
+            <summary>
+            Class for calculating the square of various shapes.
+            </summary>
+        </member>
+        <member name="M:SquareLib.SquareClass.CalculateCircle(System.Double)">
+            <summary>
+            Calculating the square of a circle using the radius.
+            </summary>
+            <param name="radius">The radius of the circle.</param>
+            <returns>The square of the circle.</returns>
+            <exception cref="T:System.ArgumentException">If the radius is less than zero.</exception>
+        </member>
+        <member name="M:SquareLib.SquareClass.CalculateTriangle(System.Double,System.Double,System.Double)">
+            <summary>
+            Сalculating the square of a triangle using the sides.
+            </summary>
+            <param name="a">The first side.</param>
+            <param name="b">The second side.</param>
+            <param name="c">The third side.</param>
+            <returns>The square of the triangle.</returns>
+            <exception cref="T:System.ArgumentException">If any side is less than or equal to zero.</exception>
+        </member>
+        <member name="M:SquareLib.SquareClass.СalculateShape(System.Double[])">
+            <summary>
+            Calculating the square of a circle or triangle.
+            </summary>
+            <param name="sides">An array of shape parameters.</param>
+            <returns>The square of the shape.</returns>
+            <exception cref="T:System.ArgumentException">If there are more than 3 sides or some side is greater than zero.</exception>
+        </member>
+    </members>
+</doc>
